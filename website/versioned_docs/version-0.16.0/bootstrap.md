@@ -1,7 +1,6 @@
 ---
 title: Bootstrapping
-id: version-0.16.0-bootstrap
-original_id: bootstrap
+id: bootstrap
 ---
 
 After creating our resolvers, types classes, and other business-related code, we need to make our app run. First we have to build the schema, then we can expose it by HTTP server, WebSockets or even MQTT.
@@ -26,10 +25,7 @@ So you can also provide an array of paths to resolver module files instead, whic
 
 ```typescript
 const schema = await buildSchema({
-  resolvers: [
-    __dirname + "/modules/**/*.resolver.ts",
-    __dirname + "/resolvers/**/*.ts",
-  ],
+  resolvers: [__dirname + "/modules/**/*.resolver.ts", __dirname + "/resolvers/**/*.ts"],
 });
 ```
 
@@ -53,7 +49,7 @@ bootstrap(); // actually run the async function
 
 ## Create HTTP GraphQL endpoint
 
-In most cases, the GraphQL app is served by a HTTP server. After building the schema we can create the GraphQL endpoint with a variety of tools such as [`graphql-yoga`](https://github.com/prisma/graphql-yoga) or [`apollo-server`](https://github.com/apollographql/apollo-server).  Here is an example using [`apollo-server`](https://github.com/apollographql/apollo-server):
+In most cases, the GraphQL app is served by a HTTP server. After building the schema we can create the GraphQL endpoint with a variety of tools such as [`graphql-yoga`](https://github.com/prisma/graphql-yoga) or [`apollo-server`](https://github.com/apollographql/apollo-server). Here is an example using [`apollo-server`](https://github.com/apollographql/apollo-server):
 
 ```typescript
 import { ApolloServer } from "apollo-server";
@@ -64,7 +60,7 @@ async function bootstrap() {
   // ... Building schema here
 
   // Create GraphQL server
-  const server = new ApolloServer({ 
+  const server = new ApolloServer({
     schema,
     playground: true,
   });

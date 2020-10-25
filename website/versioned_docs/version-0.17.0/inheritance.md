@@ -1,7 +1,6 @@
 ---
 title: Inheritance
-id: version-0.17.0-inheritance
-original_id: inheritance
+id: inheritance
 ---
 
 The main idea of TypeGraphQL is to create GraphQL types based on TypeScript classes.

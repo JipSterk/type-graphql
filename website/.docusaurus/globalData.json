@@ -1,1 +1,984 @@
-{}
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": false,
+          "path": "/docs/next",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/next/authorization",
+              "sidebar": "docs"
+            },
+            {
+              "id": "bootstrap",
+              "path": "/docs/next/bootstrap",
+              "sidebar": "docs"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/next/browser-usage",
+              "sidebar": "docs"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/next/complexity",
+              "sidebar": "docs"
+            },
+            {
+              "id": "custom-decorators",
+              "path": "/docs/next/custom-decorators",
+              "sidebar": "docs"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/next/dependency-injection",
+              "sidebar": "docs"
+            },
+            {
+              "id": "directives",
+              "path": "/docs/next/directives",
+              "sidebar": "docs"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/next/emit-schema",
+              "sidebar": "docs"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/next/enums",
+              "sidebar": "docs"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/next/examples",
+              "sidebar": "examples"
+            },
+            {
+              "id": "extensions",
+              "path": "/docs/next/extensions",
+              "sidebar": "docs"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/next/faq",
+              "sidebar": "others"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/next/generic-types",
+              "sidebar": "docs"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/next/getting-started",
+              "sidebar": "docs"
+            },
+            {
+              "id": "inheritance",
+              "path": "/docs/next/inheritance",
+              "sidebar": "docs"
+            },
+            {
+              "id": "installation",
+              "path": "/docs/next/installation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/next/interfaces",
+              "sidebar": "docs"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/next/introduction",
+              "sidebar": "docs"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/next/middlewares",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nestjs",
+              "path": "/docs/next/nestjs",
+              "sidebar": "docs"
+            },
+            {
+              "id": "performance",
+              "path": "/docs/next/performance",
+              "sidebar": "docs"
+            },
+            {
+              "id": "prisma",
+              "path": "/docs/next/prisma",
+              "sidebar": "docs"
+            },
+            {
+              "id": "README",
+              "path": "/docs/next/README"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/next/resolvers",
+              "sidebar": "docs"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/next/scalars",
+              "sidebar": "docs"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/next/subscriptions",
+              "sidebar": "docs"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/next/types-and-fields",
+              "sidebar": "docs"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/next/unions",
+              "sidebar": "docs"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/next/validation",
+              "sidebar": "docs"
+            }
+          ]
+        },
+        {
+          "name": "1.1.0",
+          "label": "1.1.0",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "enums",
+          "docs": [
+            {
+              "id": "enums",
+              "path": "/docs/enums"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/examples"
+            },
+            {
+              "id": "prisma",
+              "path": "/docs/prisma"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/validation"
+            }
+          ]
+        },
+        {
+          "name": "1.0.0",
+          "label": "1.0.0",
+          "isLast": false,
+          "path": "/docs/1.0.0",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/1.0.0/authorization",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "bootstrap",
+              "path": "/docs/1.0.0/bootstrap",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/1.0.0/browser-usage",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/1.0.0/complexity",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "custom-decorators",
+              "path": "/docs/1.0.0/custom-decorators",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/1.0.0/dependency-injection",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "directives",
+              "path": "/docs/1.0.0/directives",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/1.0.0/emit-schema",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/1.0.0/enums",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/1.0.0/examples",
+              "sidebar": "version-1.0.0/examples"
+            },
+            {
+              "id": "extensions",
+              "path": "/docs/1.0.0/extensions",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/1.0.0/faq",
+              "sidebar": "version-1.0.0/others"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/1.0.0/generic-types",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/1.0.0/getting-started",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "inheritance",
+              "path": "/docs/1.0.0/inheritance",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "installation",
+              "path": "/docs/1.0.0/installation",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/1.0.0/interfaces",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/1.0.0/introduction",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/1.0.0/middlewares",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "nestjs",
+              "path": "/docs/1.0.0/nestjs",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "performance",
+              "path": "/docs/1.0.0/performance",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "prisma",
+              "path": "/docs/1.0.0/prisma",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/1.0.0/resolvers",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/1.0.0/scalars",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/1.0.0/subscriptions",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/1.0.0/types-and-fields",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/1.0.0/unions",
+              "sidebar": "version-1.0.0/docs"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/1.0.0/validation",
+              "sidebar": "version-1.0.0/docs"
+            }
+          ]
+        },
+        {
+          "name": "0.17.6",
+          "label": "0.17.6",
+          "isLast": false,
+          "path": "/docs/0.17.6",
+          "mainDocId": "custom-decorators",
+          "docs": [
+            {
+              "id": "custom-decorators",
+              "path": "/docs/0.17.6/custom-decorators"
+            }
+          ]
+        },
+        {
+          "name": "0.17.5",
+          "label": "0.17.5",
+          "isLast": false,
+          "path": "/docs/0.17.5",
+          "mainDocId": "complexity",
+          "docs": [
+            {
+              "id": "complexity",
+              "path": "/docs/0.17.5/complexity"
+            },
+            {
+              "id": "custom-decorators",
+              "path": "/docs/0.17.5/custom-decorators"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/0.17.5/dependency-injection"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/0.17.5/enums"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/0.17.5/examples"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/0.17.5/faq"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/0.17.5/generic-types"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/0.17.5/interfaces"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/0.17.5/middlewares"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/0.17.5/subscriptions"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.17.5/types-and-fields"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.17.5/unions"
+            }
+          ]
+        },
+        {
+          "name": "0.17.4",
+          "label": "0.17.4",
+          "isLast": false,
+          "path": "/docs/0.17.4",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/0.17.4/authorization",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "bootstrap",
+              "path": "/docs/0.17.4/bootstrap",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/0.17.4/browser-usage",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/0.17.4/complexity",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "custom-decorators",
+              "path": "/docs/0.17.4/custom-decorators",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/0.17.4/dependency-injection",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/0.17.4/emit-schema",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/0.17.4/enums",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/0.17.4/examples",
+              "sidebar": "version-0.17.4/examples"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/0.17.4/faq",
+              "sidebar": "version-0.17.4/others"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/0.17.4/generic-types",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/0.17.4/getting-started",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "inheritance",
+              "path": "/docs/0.17.4/inheritance",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "installation",
+              "path": "/docs/0.17.4/installation",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/0.17.4/interfaces",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/0.17.4/introduction",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/0.17.4/middlewares",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/0.17.4/resolvers",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/0.17.4/scalars",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/0.17.4/subscriptions",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.17.4/types-and-fields",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.17.4/unions",
+              "sidebar": "version-0.17.4/docs"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/0.17.4/validation",
+              "sidebar": "version-0.17.4/docs"
+            }
+          ]
+        },
+        {
+          "name": "0.17.3",
+          "label": "0.17.3",
+          "isLast": false,
+          "path": "/docs/0.17.3",
+          "mainDocId": "authorization",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/0.17.3/authorization"
+            },
+            {
+              "id": "bootstrapping",
+              "path": "/docs/0.17.3/bootstrapping"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/0.17.3/browser-usage"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/0.17.3/complexity"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/0.17.3/dependency-injection"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/0.17.3/emit-schema"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/0.17.3/enums"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/0.17.3/examples"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/0.17.3/faq"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/0.17.3/generic-types"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/0.17.3/getting-started"
+            },
+            {
+              "id": "inheritance",
+              "path": "/docs/0.17.3/inheritance"
+            },
+            {
+              "id": "installation",
+              "path": "/docs/0.17.3/installation"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/0.17.3/interfaces"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/0.17.3/introduction"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/0.17.3/middlewares"
+            },
+            {
+              "id": "README",
+              "path": "/docs/0.17.3/README"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/0.17.3/resolvers"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/0.17.3/scalars"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/0.17.3/subscriptions"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.17.3/types-and-fields"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.17.3/unions"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/0.17.3/validation"
+            }
+          ]
+        },
+        {
+          "name": "0.17.2",
+          "label": "0.17.2",
+          "isLast": false,
+          "path": "/docs/0.17.2",
+          "mainDocId": "examples",
+          "docs": [
+            {
+              "id": "examples",
+              "path": "/docs/0.17.2/examples"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/0.17.2/getting-started"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/0.17.2/interfaces"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/0.17.2/introduction"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.17.2/types-and-fields"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.17.2/unions"
+            }
+          ]
+        },
+        {
+          "name": "0.17.1",
+          "label": "0.17.1",
+          "isLast": false,
+          "path": "/docs/0.17.1",
+          "mainDocId": "authorization",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/0.17.1/authorization"
+            },
+            {
+              "id": "bootstrap",
+              "path": "/docs/0.17.1/bootstrap"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/0.17.1/browser-usage"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/0.17.1/complexity"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/0.17.1/dependency-injection"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/0.17.1/emit-schema"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/0.17.1/enums"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/0.17.1/examples"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/0.17.1/faq"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/0.17.1/generic-types"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/0.17.1/getting-started"
+            },
+            {
+              "id": "inheritance",
+              "path": "/docs/0.17.1/inheritance"
+            },
+            {
+              "id": "installation",
+              "path": "/docs/0.17.1/installation"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/0.17.1/interfaces"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/0.17.1/introduction"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/0.17.1/middlewares"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/0.17.1/resolvers"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/0.17.1/scalars"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/0.17.1/subscriptions"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.17.1/types-and-fields"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.17.1/unions"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/0.17.1/validation"
+            }
+          ]
+        },
+        {
+          "name": "0.17.0",
+          "label": "0.17.0",
+          "isLast": false,
+          "path": "/docs/0.17.0",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/0.17.0/authorization",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "bootstrap",
+              "path": "/docs/0.17.0/bootstrap",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/0.17.0/browser-usage",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/0.17.0/complexity",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/0.17.0/dependency-injection",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/0.17.0/emit-schema",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/0.17.0/enums",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/0.17.0/examples",
+              "sidebar": "version-0.17.0/examples"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/0.17.0/faq",
+              "sidebar": "version-0.17.0/others"
+            },
+            {
+              "id": "generic-types",
+              "path": "/docs/0.17.0/generic-types",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/0.17.0/getting-started",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "inheritance",
+              "path": "/docs/0.17.0/inheritance",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "installation",
+              "path": "/docs/0.17.0/installation",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "interfaces",
+              "path": "/docs/0.17.0/interfaces",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/0.17.0/introduction",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/0.17.0/middlewares",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/0.17.0/resolvers",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/0.17.0/scalars",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/0.17.0/subscriptions",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.17.0/types-and-fields",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.17.0/unions",
+              "sidebar": "version-0.17.0/docs"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/0.17.0/validation",
+              "sidebar": "version-0.17.0/docs"
+            }
+          ]
+        },
+        {
+          "name": "0.16.0",
+          "label": "0.16.0",
+          "isLast": false,
+          "path": "/docs/0.16.0",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "authorization",
+              "path": "/docs/0.16.0/authorization",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "bootstrap",
+              "path": "/docs/0.16.0/bootstrap",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "browser-usage",
+              "path": "/docs/0.16.0/browser-usage",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "complexity",
+              "path": "/docs/0.16.0/complexity",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "dependency-injection",
+              "path": "/docs/0.16.0/dependency-injection",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "emit-schema",
+              "path": "/docs/0.16.0/emit-schema",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "enums",
+              "path": "/docs/0.16.0/enums",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "examples",
+              "path": "/docs/0.16.0/examples",
+              "sidebar": "version-0.16.0/examples"
+            },
+            {
+              "id": "faq",
+              "path": "/docs/0.16.0/faq",
+              "sidebar": "version-0.16.0/others"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/0.16.0/getting-started",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "interfaces-and-inheritance",
+              "path": "/docs/0.16.0/interfaces-and-inheritance",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/0.16.0/introduction",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "middlewares",
+              "path": "/docs/0.16.0/middlewares",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "resolvers",
+              "path": "/docs/0.16.0/resolvers",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "scalars",
+              "path": "/docs/0.16.0/scalars",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "subscriptions",
+              "path": "/docs/0.16.0/subscriptions",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "types-and-fields",
+              "path": "/docs/0.16.0/types-and-fields",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "unions",
+              "path": "/docs/0.16.0/unions",
+              "sidebar": "version-0.16.0/docs"
+            },
+            {
+              "id": "validation",
+              "path": "/docs/0.16.0/validation",
+              "sidebar": "version-0.16.0/docs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

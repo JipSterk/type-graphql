@@ -5,13 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require("react");
+import React from "react";
+import { Container, GridBlock } from "../../core/compLibrary";
 
-const { Container, GridBlock } = require("../../core/CompLibrary.js");
-
-const siteConfig = require(process.cwd() + "/siteConfig.js");
-
-class Help extends React.Component {
+export default class Help extends React.Component {
   render() {
     const supportLinks = [
       {
@@ -43,5 +40,3 @@ class Help extends React.Component {
     );
   }
 }
-
-module.exports = Help;

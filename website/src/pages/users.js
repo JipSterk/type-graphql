@@ -5,10 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require("react");
-
-const CompLibrary = require("../../core/CompLibrary.js");
-const Container = CompLibrary.Container;
+import React from "react";
+import { Container } from "../../core/compLibrary";
 
 const siteConfig = require(process.cwd() + "/siteConfig.js");
 

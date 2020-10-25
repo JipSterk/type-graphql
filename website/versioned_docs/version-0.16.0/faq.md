@@ -1,7 +1,6 @@
 ---
 title: Frequently Asked Questions
-id: version-0.16.0-faq
-original_id: faq
+id: faq
 ---
 
 ## Resolvers

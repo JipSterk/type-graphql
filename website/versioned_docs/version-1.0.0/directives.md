@@ -1,7 +1,6 @@
 ---
 title: Directives
-id: version-1.0.0-directives
-original_id: directives
+id: directives
 ---
 
 [GraphQL directives](https://www.apollographql.com/docs/graphql-tools/schema-directives/) though the syntax might remind the TS decorators:

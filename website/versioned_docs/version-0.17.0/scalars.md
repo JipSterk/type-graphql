@@ -1,7 +1,6 @@
 ---
 title: Scalars
-id: version-0.17.0-scalars
-original_id: scalars
+id: scalars
 ---
 
 ## Aliases

@@ -1,7 +1,6 @@
 ---
 title: Emitting schema SDL
-id: version-0.16.0-emit-schema
-original_id: emit-schema
+id: emit-schema
 ---
 
 The TypeGraphQL main feature is creating schema using only TypeScript's classes and decorators. However, sometimes we might need the schema to be printed into a `schema.gql` file and there are a plenty of reasons for that. Mainly, schema SDL file is needed for GraphQL ecosystem tools that perform client-side queries autocompletion and validation. Some developers also may want to use it as a kinda snapshot for detecting schema regression or they just prefer to read the SDL file to explore the API instead of reading the complicated TypeGraphQL-based app code, navigating through GraphiQL or GraphQL Playground.

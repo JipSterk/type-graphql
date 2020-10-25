@@ -1,7 +1,6 @@
 ---
 title: Authorization
-id: version-0.17.0-authorization
-original_id: authorization
+id: authorization
 ---
 
 Authorization is a core feature used in almost all APIs. Sometimes we want to restrict access to some actions or reading some data only for specific group of users.

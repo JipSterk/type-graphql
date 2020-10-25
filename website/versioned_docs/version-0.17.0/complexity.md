@@ -1,7 +1,6 @@
 ---
 title: Query complexity
-id: version-0.17.0-complexity
-original_id: complexity
+id: complexity
 ---
 
 A single GraphQL query can potentially generate huge workload for a server, like thousands of database operations which can be used to cause DDoS attacks. To keep track and limit of what each GraphQL operation can do , `TypeGraphQL` provides you the option of integrating with Query Complexity tools like [graphql-query-complexity](https://github.com/ivome/graphql-query-complexity).

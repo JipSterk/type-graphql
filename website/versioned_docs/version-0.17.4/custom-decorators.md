@@ -1,7 +1,6 @@
 ---
 title: Custom decorators
-id: version-0.17.4-custom-decorators
-original_id: custom-decorators
+id: custom-decorators
 ---
 
 Custom decorators are a great way to reduce the boilerplate and reuse some common logic between different resolvers. TypeGraphQL supports two kinds of custom decorators - method and parameter.

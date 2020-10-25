@@ -1,7 +1,6 @@
 ---
 title: Dependency injection
-id: version-0.17.5-dependency-injection
-original_id: dependency-injection
+id: dependency-injection
 ---
 
 Dependency injection is a really useful pattern that helps in decoupling parts of the app.
@@ -120,7 +119,7 @@ const server = new ApolloServer({
 
 We also have to dispose the container after the request has been handled and the response is ready. Otherwise, there would be a huge memory leak as the new instances of services and resolvers have been created for each request but they haven't been cleaned up.
 
-Apollo Server since version 2.2.0 has a [plugins](https://www.apollographql.com/docs/apollo-server/integrations/plugins/) feature that supports [`willSendResponse`](https://www.apollographql.com/docs/apollo-server/integrations/plugins/#willsendresponse) lifecycle event. We can leverage it to clean up the container after handling the request. 
+Apollo Server since version 2.2.0 has a [plugins](https://www.apollographql.com/docs/apollo-server/integrations/plugins/) feature that supports [`willSendResponse`](https://www.apollographql.com/docs/apollo-server/integrations/plugins/#willsendresponse) lifecycle event. We can leverage it to clean up the container after handling the request.
 
 Example using `TypeDI` and `apollo-server` with plugins approach:
 

@@ -1,7 +1,6 @@
 ---
 title: Getting started
-id: version-0.17.1-getting-started
-original_id: getting-started
+id: getting-started
 ---
 
 > Make sure you've completed all the steps described in the [installation instructions](installation.md).

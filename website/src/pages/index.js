@@ -6,13 +6,8 @@
  */
 
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import React from "react";
-
-// const CompLibrary = require("../../core/CompLibrary.js");
-// const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-// const Container = CompLibrary.Container;
-// const GridBlock = CompLibrary.GridBlock;
+import { Container, GridBlock, MarkdownBlock } from "../../core/compLibrary";
 
 const Button = ({ href, target = "_self", children }) => (
   <div className="pluginWrapper buttonWrapper">
@@ -51,15 +46,15 @@ const PromoSection = ({ children }) => (
   </div>
 );
 
-const HomeSplash = ({ language = "" }) => (
+const HomeSplash = () => (
   <SplashContainer>
     <div className="inner">
-      <Logo img_src={imgUrl("logo.png")} />
+      <Logo img_src={useBaseUrl("logo.png")} />
       <ProjectTitle />
       <PromoSection>
         <Button href={useBaseUrl("introduction.html", language)}>Introduction</Button>
-        <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
-        <Button href={docUrl("examples.html", language)}>Examples</Button>
+        {/* <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
+        <Button href={docUrl("examples.html", language)}>Examples</Button> */}
       </PromoSection>
     </div>
   </SplashContainer>
@@ -75,21 +70,21 @@ const Features = () => (
   <Block layout="fourColumn" className="highlight features-section">
     {[
       {
-        image: imgUrl("GraphQL_Logo.svg"),
+        image: useBaseUrl("img/GraphQL_Logo.svg"),
         imageAlign: "top",
         title: "GraphQL",
         content:
           "Define your whole schema, including types, interfaces, enums, unions and subscriptions",
       },
       {
-        image: imgUrl("ts-logo.png"),
+        image: useBaseUrl("img/ts-logo.png"),
         imageAlign: "top",
         title: "TypeScript",
         content:
           "Create the schema, types and resolvers only with TypeScript, using classes and decorators! ",
       },
       {
-        image: imgUrl("tools.svg"),
+        image: useBaseUrl("img/tools.svg"),
         imageAlign: "top",
         title: "Advanced features",
         content:
@@ -99,9 +94,9 @@ const Features = () => (
   </Block>
 );
 
-const objectTypeSnippet = fs
-  .readFileSync(process.cwd() + "/pages/snippets/object-type.md")
-  .toString();
+// const objectTypeSnippet = fs
+//   .readFileSync(process.cwd() + "/pages/snippets/object-type.md")
+//   .toString();
 
 const DefineSchemaSection = () => (
   <Container
@@ -126,9 +121,9 @@ const DefineSchemaSection = () => (
   </Container>
 );
 
-const testabilitySnippet = fs
-  .readFileSync(process.cwd() + "/pages/snippets/testability.md")
-  .toString();
+// const testabilitySnippet = fs
+//   .readFileSync(process.cwd() + "/pages/snippets/testability.md")
+//   .toString();
 
 const ResolversSection = () => (
   <Container id="validation" padding={["bottom", "top"]} className="snippet-container">
@@ -148,9 +143,9 @@ const ResolversSection = () => (
   </Container>
 );
 
-const validationSnippet = fs
-  .readFileSync(process.cwd() + "/pages/snippets/validation.md")
-  .toString();
+// const validationSnippet = fs
+//   .readFileSync(process.cwd() + "/pages/snippets/validation.md")
+//   .toString();
 
 const Validation = () => (
   <Container
@@ -175,7 +170,7 @@ const Validation = () => (
   </Container>
 );
 
-const typeormSnippet = fs.readFileSync(process.cwd() + "/pages/snippets/typeorm.md").toString();
+// const typeormSnippet = fs.readFileSync(process.cwd() + "/pages/snippets/typeorm.md").toString();
 
 const InteroperableSection = () => (
   <Container id="interoperable" padding={["bottom", "top"]} className="snippet-container">
@@ -196,7 +191,7 @@ const InteroperableSection = () => (
 );
 
 const CollectiveSection = () => (
-  <React.Fragment>
+  <>
     <Container id="collective" padding={["top"]} className="snippet-container highlight">
       <GridBlock
         align="left"
@@ -223,13 +218,13 @@ const CollectiveSection = () => (
         <div className="tiles">
           <a href="http://career.bluereceipt.co/">
             <img
-              src={imgUrl("blue_receipt.gif")}
+              src={useBaseUrl("img/blue_receipt.gif")}
               style={{ width: 450, filter: "brightness(0.975)" }}
             />
             <span style={{ fontSize: 20 }}>BlueReceipt</span>
           </a>
           <a href="https://www.ecadlabs.com/">
-            <img src={imgUrl("ecad.png")} style={{ width: 150 }} />
+            <img src={useBaseUrl("img/ecad.png")} style={{ width: 150 }} />
             <span style={{ fontSize: 20 }}>ECAD Labs</span>
           </a>
         </div>
@@ -243,26 +238,26 @@ const CollectiveSection = () => (
         <h3 className="title">Silver Sponsors 🥈</h3>
         <div className="tiles">
           <a href="https://gorrion.io/">
-            <img src={imgUrl("gorrion.png")} style={{ width: 250 }} />
+            <img src={useBaseUrl("img/gorrion.png")} style={{ width: 250 }} />
             <span>Gorrion Software House</span>
           </a>
           <a href="https://www.mryum.com/">
-            <img src={imgUrl("mr-yum.png")} style={{ width: 100 }} />
+            <img src={useBaseUrl("img/mr-yum.png")} style={{ width: 100 }} />
             <span>Mr Yum</span>
           </a>
         </div>
         <h3 className="title">Bronze Sponsors 🥉</h3>
         <div className="tiles">
           <a href="https://www.ligrsystems.com/">
-            <img src={imgUrl("live-graphics-system.png")} style={{ width: 60 }} />
+            <img src={useBaseUrl("img/live-graphics-system.png")} style={{ width: 60 }} />
             <span>Live Graphic Systems</span>
           </a>
           <a href="https://www.joinlifex.com/">
-            <img src={imgUrl("lifex.svg")} style={{ width: 75 }} />
+            <img src={useBaseUrl("img/lifex.svg")} style={{ width: 75 }} />
             <span>LifeX Aps</span>
           </a>
           <a href="https://www.swissmentor.com/">
-            <img src={imgUrl("swiss-mentor.png")} style={{ width: 125 }} />
+            <img src={useBaseUrl("img/swiss-mentor.png")} style={{ width: 125 }} />
             <span>SwissMentor</span>
           </a>
         </div>
@@ -275,10 +270,10 @@ const CollectiveSection = () => (
         </a>
       </div>
     </div>
-  </React.Fragment>
+  </>
 );
 
-const WantMoreSection = ({ language = "" }) => (
+const WantMoreSection = () => (
   <div className="want-more-section">
     <div className="productShowcaseSection" style={{ textAlign: "center" }}>
       <h2>Want more?</h2>
@@ -289,8 +284,8 @@ const WantMoreSection = ({ language = "" }) => (
       <br />
     </div>
     <div className="want-more-buttons">
-      <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
-      <Button href={docUrl("examples.html", language)}>Examples</Button>
+      {/* <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
+      <Button href={docUrl("examples.html", language)}>Examples</Button> */}
     </div>
   </div>
 );
@@ -325,24 +320,20 @@ const WantMoreSection = ({ language = "" }) => (
 //   );
 // };
 
-const Index = () => {
-  const c = useDocusaurusContext();
-  console.log(c);
-  return (
-    <div>
-      <HomeSplash language={language} />
-      <div className="mainContainer">
-        <Features />
-        <DefineSchemaSection />
-        <ResolversSection />
-        <Validation />
-        <InteroperableSection />
-        <CollectiveSection />
-        <WantMoreSection language={language} />
-        {/* <Showcase language={language} /> */}
-      </div>
+const Index = () => (
+  <div>
+    <HomeSplash />
+    <div className="mainContainer">
+      <Features />
+      <DefineSchemaSection />
+      <ResolversSection />
+      <Validation />
+      <InteroperableSection />
+      <CollectiveSection />
+      <WantMoreSection />
+      {/* <Showcase language={language} /> */}
     </div>
-  );
-};
+  </div>
+);
 
 export default Index;

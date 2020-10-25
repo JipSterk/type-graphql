@@ -1,7 +1,6 @@
 ---
 title: Installation
-id: version-0.17.0-installation
-original_id: installation
+id: installation
 ---
 
 Before getting started with TypeGraphQL we need to install some additional dependencies and properly configure TypeScript configuration for our project.

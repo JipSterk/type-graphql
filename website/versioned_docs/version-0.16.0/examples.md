@@ -1,8 +1,7 @@
 ---
 title: Examples
 sidebar_label: List of examples
-id: version-0.16.0-examples
-original_id: examples
+id: examples
 ---
 
 On the [GitHub repository](https://github.com/MichalLytek/type-graphql) there are a few simple examples showing how to use different TypeGraphQL features and how well it integrates with 3rd party libraries.

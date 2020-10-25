@@ -1,7 +1,6 @@
 ---
 title: Dependency injection
-id: version-1.0.0-dependency-injection
-original_id: dependency-injection
+id: dependency-injection
 ---
 
 Dependency injection is a really useful pattern that helps in decoupling parts of the app.
