@@ -1,7 +1,6 @@
 ---
 title: Unions
-id: version-0.17.5-unions
-original_id: unions
+id: unions
 ---
 
 Sometimes our API has to be flexible and return a type that is not specific but one from a range of possible types. An example might be a movie site's search functionality: using the provided phrase we search the database for movies but also actors. So the query has to return a list of `Movie` or `Actor` types.

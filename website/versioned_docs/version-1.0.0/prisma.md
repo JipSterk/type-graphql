@@ -1,8 +1,7 @@
 ---
 title: Prisma 2 Integration
 sidebar_label: Prisma 2
-id: version-1.0.0-prisma
-original_id: prisma
+id: prisma
 ---
 
 TypeGraphQL provides an integration with Prisma 2 by the [`typegraphql-prisma` package](https://www.npmjs.com/package/typegraphql-prisma).

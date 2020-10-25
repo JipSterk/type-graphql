@@ -1,7 +1,6 @@
 ---
 title: Interfaces
-id: version-1.0.0-interfaces
-original_id: interfaces
+id: interfaces
 ---
 
 The main idea of TypeGraphQL is to create GraphQL types based on TypeScript classes.

@@ -1,7 +1,6 @@
 ---
 title: Bootstrapping
-id: version-1.0.0-bootstrap
-original_id: bootstrap
+id: bootstrap
 ---
 
 After creating our resolvers, type classes, and other business-related code, we need to make our app run. First we have to build the schema, then we can expose it with an HTTP server, WebSockets or even MQTT.

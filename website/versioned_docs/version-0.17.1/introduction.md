@@ -1,8 +1,7 @@
 ---
 title: Introduction
 sidebar_label: What & Why
-id: version-0.17.1-introduction
-original_id: introduction
+id: introduction
 ---
 
 We all love GraphQL! It's really great and solves many problems that we have with REST APIs, such as overfetching and underfetching. But developing a GraphQL API in Node.js with TypeScript is sometimes a bit of a pain.

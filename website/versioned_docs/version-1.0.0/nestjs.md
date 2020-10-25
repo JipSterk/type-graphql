@@ -1,8 +1,7 @@
 ---
 title: NestJS Integration
 sidebar_label: NestJS
-id: version-1.0.0-nestjs
-original_id: nestjs
+id: nestjs
 ---
 
 TypeGraphQL provides some basic integration with NestJS by the [`typegraphql-nestjs` package](https://www.npmjs.com/package/typegraphql-nestjs).

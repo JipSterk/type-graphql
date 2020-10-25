@@ -1,7 +1,6 @@
 ---
 title: Enums
-id: version-1.1.0-enums
-original_id: enums
+id: enums
 ---
 
 Nowadays almost all typed languages have support for enumerated types, including TypeScript. Enums limit the range of a variable's values to a set of predefined constants, which makes it easier to document intent.

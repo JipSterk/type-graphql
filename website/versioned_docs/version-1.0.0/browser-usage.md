@@ -1,7 +1,6 @@
 ---
 title: Browser usage
-id: version-1.0.0-browser-usage
-original_id: browser-usage
+id: browser-usage
 ---
 
 ## Using classes in a client app

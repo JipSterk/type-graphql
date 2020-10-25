@@ -14,8 +14,12 @@ module.exports = {
     gtag: {
       trackingID: "UA-117093147-1",
     },
+    algolia: {
+      apiKey: "2cf66434100c0e30ca9ff499830e7b77",
+      indexName: "typegraphql",
+    },
     navbar: {
-      links: [
+      items: [
         {
           doc: "introduction",
           label: "Docs",
@@ -44,23 +48,28 @@ module.exports = {
           search: true,
         },
       ],
-      algolia: {
-        apiKey: "2cf66434100c0e30ca9ff499830e7b77",
-        indexName: "typegraphql",
-      },
-      headerIcon: "img/logo.png",
-      footerIcon: "img/logo.png",
-      editUrl: "https://github.com/MichalLytek/type-graphql/edit/master/docs/",
-      colors: {
-        primaryColor: "#222",
-        secondaryColor: "#333",
-      },
+      // headerIcon: "img/logo.png",
+      // footerIcon: "img/logo.png",
     },
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Michał Lytek`,
     },
     scripts: ["https://buttons.github.io/buttons.js"],
   },
-  // repoUrl: "https://github.com/MichalLytek/type-graphql",
-  // onPageNav: "separate",
+  presets: [
+    [
+      "@docusaurus/preset-classic",
+      {
+        docs: {
+          admonitions: {
+            sidebarPath: require.resolve("./sidebars.json"),
+            editUrl: "https://github.com/MichalLytek/type-graphql/edit/master/website/",
+          },
+          // theme: {
+          //   customCss: require.resolve("./src/css/custom.css"),
+          // },
+        },
+      },
+    ],
+  ],
 };

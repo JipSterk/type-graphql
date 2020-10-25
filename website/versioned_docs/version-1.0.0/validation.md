@@ -1,8 +1,7 @@
 ---
 title: Argument and Input validation
 sidebar_label: Validation
-id: version-1.0.0-validation
-original_id: validation
+id: validation
 ---
 
 ## Scalars

@@ -1,7 +1,6 @@
 ---
 title: Extensions
-id: version-1.0.0-extensions
-original_id: extensions
+id: extensions
 ---
 
 The `graphql-js` library allows for putting arbitrary data into GraphQL types config inside the `extensions` property.

@@ -1,7 +1,6 @@
 ---
 title: Enums
-id: version-0.17.0-enums
-original_id: enums
+id: enums
 ---
 
 Nowadays almost all typed languages have support for enumerated types, including TypeScript.

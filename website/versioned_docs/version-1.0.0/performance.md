@@ -1,7 +1,6 @@
 ---
 title: Performance
-id: version-1.0.0-performance
-original_id: performance
+id: performance
 ---
 
 **TypeGraphQL** is basically an abstraction layer built on top of the reference GraphQL implementation for Javascript - [`graphql-js`](https://github.com/graphql/graphql-js). It not only allows for building a GraphQL schema using classes and decorators but also gives a set of tools that focus on the developer experience and allows for making common tasks easily - authorization, validation, custom middlewares and others.
@@ -69,12 +68,12 @@ class Post {
 
 This simple trick can speed up the execution up to 76%! The benchmarks show that using simple resolvers allows for as fast execution as with bare `graphql-js` - the measured overhead is only about ~13%, which is a much more reasonable value than 500%. Below you can see [the benchmarks results](https://github.com/MichalLytek/type-graphql/tree/master/benchmarks):
 
-|                                                                               | 25 000 array items |
-| ----------------------------------------------------------------------------- | :----------------: |
-| `graphql-js`                                                                  |     265.52 ms      |
-| Standard TypeGraphQL                                                          |     310.36 ms      |
-| TypeGraphQL with a global middleware                                          |     1253.28 ms     |
-| **TypeGraphQL with "simpleResolvers" applied <br> (and a global middleware)** |   **299.61 ms**    |
+|                                                                                | 25 000 array items |
+| ------------------------------------------------------------------------------ | :----------------: |
+| `graphql-js`                                                                   |     265.52 ms      |
+| Standard TypeGraphQL                                                           |     310.36 ms      |
+| TypeGraphQL with a global middleware                                           |     1253.28 ms     |
+| **TypeGraphQL with "simpleResolvers" applied <br/> (and a global middleware)** |   **299.61 ms**    |
 
 > This optimization **is not turned on by default** mostly because of the global middlewares and authorization feature.
 

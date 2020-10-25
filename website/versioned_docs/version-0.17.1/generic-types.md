@@ -1,7 +1,6 @@
 ---
 title: Generic Types
-id: version-0.17.1-generic-types
-original_id: generic-types
+id: generic-types
 ---
 
 [Type Inheritance](inheritance.md) is a great way to reduce code duplication by extracting common fields to the base class. But in some cases, the strict set of fields is not enough because we might need to declare the types of some fields in a more flexible way, like a type parameter (e.g. `items: T[]` in case of a pagination).
