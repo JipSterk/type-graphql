@@ -5,104 +5,73 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require("react");
-const fs = require("fs");
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import React from "react";
 
-const CompLibrary = require("../../core/CompLibrary.js");
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
+// const CompLibrary = require("../../core/CompLibrary.js");
+// const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
+// const Container = CompLibrary.Container;
+// const GridBlock = CompLibrary.GridBlock;
 
-const siteConfig = require(process.cwd() + "/siteConfig.js");
+const Button = ({ href, target = "_self", children }) => (
+  <div className="pluginWrapper buttonWrapper">
+    <a className="button" href={href} target={target}>
+      {children}
+    </a>
+  </div>
+);
 
-function imgUrl(img) {
-  return siteConfig.baseUrl + "img/" + img;
-}
-
-function docUrl(doc, language) {
-  return siteConfig.baseUrl + "docs/" + (language ? language + "/" : "") + doc;
-}
-
-function pageUrl(page, language) {
-  return siteConfig.baseUrl + (language ? language + "/" : "") + page;
-}
-
-class Button extends React.Component {
-  render() {
-    return (
-      <div className="pluginWrapper buttonWrapper">
-        <a className="button" href={this.props.href} target={this.props.target}>
-          {this.props.children}
-        </a>
-      </div>
-    );
-  }
-}
-
-Button.defaultProps = {
-  target: "_self",
-};
-
-const SplashContainer = props => (
+const SplashContainer = ({ children }) => (
   <div className="homeContainer">
     <div className="homeSplashFade">
-      <div className="wrapper homeWrapper">{props.children}</div>
+      <div className="wrapper homeWrapper">{children}</div>
     </div>
   </div>
 );
 
-const Logo = props => (
+const Logo = ({ img_src }) => (
   <div className="project-logo">
-    <img src={props.img_src} />
+    <img src={img_src} />
   </div>
 );
 
-const ProjectTitle = props => (
+const ProjectTitle = ({ title, tagline }) => (
   <h2 className="projectTitle">
-    {siteConfig.title}
-    <small>{siteConfig.tagline}</small>
+    {title}
+    <small>{tagline}</small>
   </h2>
 );
 
-const PromoSection = props => (
+const PromoSection = ({ children }) => (
   <div className="section promoSection">
     <div className="promoRow">
-      <div className="pluginRowBlock">{props.children}</div>
+      <div className="pluginRowBlock">{children}</div>
     </div>
   </div>
 );
 
-class HomeSplash extends React.Component {
-  render() {
-    let language = this.props.language || "";
-    return (
-      <SplashContainer>
-        <div className="inner">
-          <Logo img_src={imgUrl("logo.png")} />
-          <ProjectTitle />
-          <PromoSection>
-            <Button href={docUrl("introduction.html", language)}>Introduction</Button>
-            <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
-            <Button href={docUrl("examples.html", language)}>Examples</Button>
-          </PromoSection>
-        </div>
-      </SplashContainer>
-    );
-  }
-}
+const HomeSplash = ({ language = "" }) => (
+  <SplashContainer>
+    <div className="inner">
+      <Logo img_src={imgUrl("logo.png")} />
+      <ProjectTitle />
+      <PromoSection>
+        <Button href={useBaseUrl("introduction.html", language)}>Introduction</Button>
+        <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
+        <Button href={docUrl("examples.html", language)}>Examples</Button>
+      </PromoSection>
+    </div>
+  </SplashContainer>
+);
 
-const Block = props => (
-  <Container
-    padding={["bottom", "top"]}
-    id={props.id}
-    background={props.background}
-    className={props.className}
-  >
-    <GridBlock align={props.align || "center"} contents={props.children} layout={props.layout} />
+const Block = ({ id, background, className, align, children, layout }) => (
+  <Container padding={["bottom", "top"]} id={id} background={background} className={className}>
+    <GridBlock align={align || "center"} contents={children} layout={layout} />
   </Container>
 );
 
-const Features = props => (
+const Features = () => (
   <Block layout="fourColumn" className="highlight features-section">
     {[
       {
@@ -133,7 +102,8 @@ const Features = props => (
 const objectTypeSnippet = fs
   .readFileSync(process.cwd() + "/pages/snippets/object-type.md")
   .toString();
-const DefineSchemaSection = props => (
+
+const DefineSchemaSection = () => (
   <Container
     id="define-schema"
     padding={["bottom", "top"]}
@@ -159,7 +129,8 @@ const DefineSchemaSection = props => (
 const testabilitySnippet = fs
   .readFileSync(process.cwd() + "/pages/snippets/testability.md")
   .toString();
-const ResolversSection = props => (
+
+const ResolversSection = () => (
   <Container id="validation" padding={["bottom", "top"]} className="snippet-container">
     <div className="snippet">
       <MarkdownBlock>{testabilitySnippet}</MarkdownBlock>
@@ -180,7 +151,8 @@ const ResolversSection = props => (
 const validationSnippet = fs
   .readFileSync(process.cwd() + "/pages/snippets/validation.md")
   .toString();
-const Validation = props => (
+
+const Validation = () => (
   <Container
     id="validation"
     padding={["bottom", "top"]}
@@ -204,7 +176,8 @@ const Validation = props => (
 );
 
 const typeormSnippet = fs.readFileSync(process.cwd() + "/pages/snippets/typeorm.md").toString();
-const InteroperableSection = props => (
+
+const InteroperableSection = () => (
   <Container id="interoperable" padding={["bottom", "top"]} className="snippet-container">
     <div className="snippet">
       <MarkdownBlock>{typeormSnippet}</MarkdownBlock>
@@ -222,7 +195,7 @@ const InteroperableSection = props => (
   </Container>
 );
 
-const CollectiveSection = props => (
+const CollectiveSection = () => (
   <React.Fragment>
     <Container id="collective" padding={["top"]} className="snippet-container highlight">
       <GridBlock
@@ -305,25 +278,22 @@ const CollectiveSection = props => (
   </React.Fragment>
 );
 
-const WantMoreSection = props => {
-  let language = props.language || "";
-  return (
-    <div className="want-more-section">
-      <div className="productShowcaseSection" style={{ textAlign: "center" }}>
-        <h2>Want more?</h2>
-        That was only a tip of the iceberg. Interested?
-        <br />
-        Give it a try and experiment with TypeGraphQL! It will reduce your codebase size by a half
-        or more!
-        <br />
-      </div>
-      <div className="want-more-buttons">
-        <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
-        <Button href={docUrl("examples.html", language)}>Examples</Button>
-      </div>
+const WantMoreSection = ({ language = "" }) => (
+  <div className="want-more-section">
+    <div className="productShowcaseSection" style={{ textAlign: "center" }}>
+      <h2>Want more?</h2>
+      That was only a tip of the iceberg. Interested?
+      <br />
+      Give it a try and experiment with TypeGraphQL! It will reduce your codebase size by a half or
+      more!
+      <br />
     </div>
-  );
-};
+    <div className="want-more-buttons">
+      <Button href={docUrl("getting-started.html", language)}>Getting started</Button>
+      <Button href={docUrl("examples.html", language)}>Examples</Button>
+    </div>
+  </div>
+);
 
 // const Showcase = props => {
 //   if ((siteConfig.users || []).length === 0) {
@@ -355,26 +325,24 @@ const WantMoreSection = props => {
 //   );
 // };
 
-class Index extends React.Component {
-  render() {
-    let language = this.props.language || "";
-
-    return (
-      <div>
-        <HomeSplash language={language} />
-        <div className="mainContainer">
-          <Features />
-          <DefineSchemaSection />
-          <ResolversSection />
-          <Validation />
-          <InteroperableSection />
-          <CollectiveSection />
-          <WantMoreSection language={language} />
-          {/* <Showcase language={language} /> */}
-        </div>
+const Index = () => {
+  const c = useDocusaurusContext();
+  console.log(c);
+  return (
+    <div>
+      <HomeSplash language={language} />
+      <div className="mainContainer">
+        <Features />
+        <DefineSchemaSection />
+        <ResolversSection />
+        <Validation />
+        <InteroperableSection />
+        <CollectiveSection />
+        <WantMoreSection language={language} />
+        {/* <Showcase language={language} /> */}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
-module.exports = Index;
+export default Index;
